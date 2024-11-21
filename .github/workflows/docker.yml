@@ -29,4 +29,4 @@ jobs:
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ghcr.io/cyanfox-projects/cyanfox-base:latest
+            ghcr.io/cyanfox-labs/cyanfox-base:latest
