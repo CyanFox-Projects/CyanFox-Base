@@ -21,7 +21,7 @@
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5",
         "mews/captcha": "^3.3",
-        "mhmiton/laravel-modules-livewire": "^3.0",
+        "mhmiton/laravel-modules-livewire": "^4.2",
         "nwidart/laravel-modules": "^11.0",
         "openspout/openspout": "^4.24",
         "power-components/livewire-powergrid": "^5.7",

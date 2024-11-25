@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f75a02cea7023bbfbe209766458f006",
+    "content-hash": "97a5a0f6481f0222bf012ec3690fba7c",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3314,16 +3314,16 @@
         },
         {
             "name": "mhmiton/laravel-modules-livewire",
-            "version": "v3.0.0",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhmiton/laravel-modules-livewire.git",
-                "reference": "8e33fda90fec07207f28ca48d4bc453146ae5e93"
+                "reference": "08563302e4de84390269e72838cb6a8789d839f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhmiton/laravel-modules-livewire/zipball/8e33fda90fec07207f28ca48d4bc453146ae5e93",
-                "reference": "8e33fda90fec07207f28ca48d4bc453146ae5e93",
+                "url": "https://api.github.com/repos/mhmiton/laravel-modules-livewire/zipball/08563302e4de84390269e72838cb6a8789d839f8",
+                "reference": "08563302e4de84390269e72838cb6a8789d839f8",
                 "shasum": ""
             },
             "require": {
@@ -3372,9 +3372,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mhmiton/laravel-modules-livewire/issues",
-                "source": "https://github.com/mhmiton/laravel-modules-livewire/tree/v3.0.0"
+                "source": "https://github.com/mhmiton/laravel-modules-livewire/tree/v4.2.0"
             },
-            "time": "2024-03-24T00:11:35+00:00"
+            "time": "2024-11-22T18:13:14+00:00"
         },
         {
             "name": "monolog/monolog",
