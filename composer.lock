@@ -3102,16 +3102,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.5.12",
+            "version": "v3.5.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "3c8d1f9d7d9098aaea663093ae168f2d5d2ae73d"
+                "reference": "0b842088d716cadaf9d94fc4f096bc688db29d65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/3c8d1f9d7d9098aaea663093ae168f2d5d2ae73d",
-                "reference": "3c8d1f9d7d9098aaea663093ae168f2d5d2ae73d",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/0b842088d716cadaf9d94fc4f096bc688db29d65",
+                "reference": "0b842088d716cadaf9d94fc4f096bc688db29d65",
                 "shasum": ""
             },
             "require": {
@@ -3166,7 +3166,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.5.12"
+                "source": "https://github.com/livewire/livewire/tree/v3.5.16"
             },
             "funding": [
                 {
@@ -3174,7 +3174,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-15T19:35:06+00:00"
+            "time": "2024-12-02T15:57:58+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -3318,16 +3318,16 @@
         },
         {
             "name": "mhmiton/laravel-modules-livewire",
-            "version": "v4.2.0",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhmiton/laravel-modules-livewire.git",
-                "reference": "08563302e4de84390269e72838cb6a8789d839f8"
+                "reference": "05f65e316a99601e58278d4e7770864f90532d5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhmiton/laravel-modules-livewire/zipball/08563302e4de84390269e72838cb6a8789d839f8",
-                "reference": "08563302e4de84390269e72838cb6a8789d839f8",
+                "url": "https://api.github.com/repos/mhmiton/laravel-modules-livewire/zipball/05f65e316a99601e58278d4e7770864f90532d5e",
+                "reference": "05f65e316a99601e58278d4e7770864f90532d5e",
                 "shasum": ""
             },
             "require": {
@@ -3376,9 +3376,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mhmiton/laravel-modules-livewire/issues",
-                "source": "https://github.com/mhmiton/laravel-modules-livewire/tree/v4.2.0"
+                "source": "https://github.com/mhmiton/laravel-modules-livewire/tree/v4.3.0"
             },
-            "time": "2024-11-22T18:13:14+00:00"
+            "time": "2024-11-27T15:53:42+00:00"
         },
         {
             "name": "monolog/monolog",
