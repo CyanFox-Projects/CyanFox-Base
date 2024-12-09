@@ -7622,16 +7622,16 @@
         },
         {
             "name": "tallstackui/tallstackui",
-            "version": "v1.36.0",
+            "version": "v1.36.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tallstackui/tallstackui.git",
-                "reference": "c8d5f0aaeb9775b91f1b36451f99d608d0314a80"
+                "reference": "59f8b9b05565aec67451f0cd57cfadea8610e948"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/c8d5f0aaeb9775b91f1b36451f99d608d0314a80",
-                "reference": "c8d5f0aaeb9775b91f1b36451f99d608d0314a80",
+                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/59f8b9b05565aec67451f0cd57cfadea8610e948",
+                "reference": "59f8b9b05565aec67451f0cd57cfadea8610e948",
                 "shasum": ""
             },
             "require": {
@@ -7655,12 +7655,12 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "TallStackUi\\TallStackUiServiceProvider"
-                    ],
                     "aliases": {
                         "TallStackUi": "TallStackUi\\Facades\\TallStackUi"
-                    }
+                    },
+                    "providers": [
+                        "TallStackUi\\TallStackUiServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -7681,7 +7681,7 @@
             "description": "TallStackUI is a powerful suite of Blade components that elevate your workflow of Livewire applications.",
             "support": {
                 "issues": "https://github.com/tallstackui/tallstackui/issues",
-                "source": "https://github.com/tallstackui/tallstackui/tree/v1.36.0"
+                "source": "https://github.com/tallstackui/tallstackui/tree/v1.36.1"
             },
             "funding": [
                 {
@@ -7689,7 +7689,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-20T03:35:12+00:00"
+            "time": "2024-12-03T14:19:59+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
