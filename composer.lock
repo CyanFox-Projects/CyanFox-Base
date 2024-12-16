@@ -3883,16 +3883,16 @@
         },
         {
             "name": "nwidart/laravel-modules",
-            "version": "v11.1.6",
+            "version": "v11.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nWidart/laravel-modules.git",
-                "reference": "bebe5b4676cf22d891c1863e9aa2688f34ddaa9f"
+                "reference": "26c0716994b2669c308e15a7090a6867f7a1ba09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/bebe5b4676cf22d891c1863e9aa2688f34ddaa9f",
-                "reference": "bebe5b4676cf22d891c1863e9aa2688f34ddaa9f",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/26c0716994b2669c308e15a7090a6867f7a1ba09",
+                "reference": "26c0716994b2669c308e15a7090a6867f7a1ba09",
                 "shasum": ""
             },
             "require": {
@@ -3904,7 +3904,7 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^v3.52",
-                "laravel/framework": "^v11.0",
+                "laravel/framework": "^v11.33",
                 "laravel/pint": "^1.16",
                 "mockery/mockery": "^1.6",
                 "orchestra/testbench": "^v9.0",
@@ -3915,12 +3915,12 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "Nwidart\\Modules\\LaravelModulesServiceProvider"
-                    ],
                     "aliases": {
                         "Module": "Nwidart\\Modules\\Facades\\Module"
-                    }
+                    },
+                    "providers": [
+                        "Nwidart\\Modules\\LaravelModulesServiceProvider"
+                    ]
                 },
                 "branch-alias": {
                     "dev-master": "11.0-dev"
@@ -3956,7 +3956,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nWidart/laravel-modules/issues",
-                "source": "https://github.com/nWidart/laravel-modules/tree/v11.1.6"
+                "source": "https://github.com/nWidart/laravel-modules/tree/v11.1.7"
             },
             "funding": [
                 {
@@ -3968,7 +3968,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-16T20:27:06+00:00"
+            "time": "2024-12-06T08:10:11+00:00"
         },
         {
             "name": "openspout/openspout",
@@ -7989,10 +7989,10 @@
             },
             "type": "composer-plugin",
             "extra": {
+                "class": "Wikimedia\\Composer\\Merge\\V2\\MergePlugin",
                 "branch-alias": {
                     "dev-master": "2.x-dev"
-                },
-                "class": "Wikimedia\\Composer\\Merge\\V2\\MergePlugin"
+                }
             },
             "autoload": {
                 "psr-4": {
