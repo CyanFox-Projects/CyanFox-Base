@@ -10,7 +10,7 @@
         "@tailwindcss/typography": "^0.5.16",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.9",
-        "laravel-vite-plugin": "^1.1",
+        "laravel-vite-plugin": "^1.2",
         "postcss": "^8.5.1",
         "postcss-nesting": "^13.0.1",
         "tailwindcss": "^4.0.0",
