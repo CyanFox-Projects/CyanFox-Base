@@ -20,6 +20,6 @@
         "bootstrap-icons": "^1.11.3",
         "flatpickr": "^4.6.13",
         "lucide-static": "^0.473.0",
-        "tom-select": "^2.4.1"
+        "tom-select": "^2.4.2"
     }
 }
