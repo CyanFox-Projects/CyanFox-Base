@@ -26,7 +26,7 @@ class ViewIntegrationService
     {
         $integrations = $this->integrations;
         if ($name != null) {
-            if (!isset($this->menu[$name])) {
+            if (! isset($this->menu[$name])) {
                 return null;
             }
             $integrations = $this->integrations[$name];
@@ -42,7 +42,7 @@ class ViewIntegrationService
 
     public function render(string $name, Closure $callback): ?string
     {
-        if (!isset($this->integrations[$name])) {
+        if (! isset($this->integrations[$name])) {
             return null;
         }
 

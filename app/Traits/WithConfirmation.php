@@ -11,6 +11,7 @@ trait WithConfirmation
     public function dialog(): static
     {
         $this->confirmationData = [];
+
         return $this;
     }
 
@@ -18,6 +19,7 @@ trait WithConfirmation
     {
         $this->confirmationData['title'] = $title;
         $this->confirmationData['description'] = $description;
+
         return $this;
     }
 
@@ -25,6 +27,7 @@ trait WithConfirmation
     {
         $this->confirmationData['cancel'] = $text;
         $this->confirmationData['cancelColor'] = $color;
+
         return $this;
     }
 
@@ -32,6 +35,7 @@ trait WithConfirmation
     {
         $this->confirmationData['confirm'] = $text;
         $this->confirmationData['confirmColor'] = $color;
+
         return $this;
     }
 
@@ -39,6 +43,7 @@ trait WithConfirmation
     {
         $this->confirmationData['icon'] = $icon;
         $this->confirmationData['iconColor'] = $color;
+
         return $this;
     }
 
@@ -51,7 +56,8 @@ trait WithConfirmation
 
     public function method(string $callable, ...$args): static
     {
-        $this->confirmationData['event'] = $callable . '(' . implode(', ', $args) . ')';
+        $this->confirmationData['event'] = $callable.'('.implode(', ', $args).')';
+
         return $this;
     }
 

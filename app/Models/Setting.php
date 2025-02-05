@@ -29,7 +29,7 @@ class Setting extends Model
                 return true;
             }
             if ($setting->isDirty('value') && $setting->is_locked) {
-                Log::debug('Attempted to update locked setting: ' . $setting->key);
+                Log::debug('Attempted to update locked setting: '.$setting->key);
 
                 return false;
             }

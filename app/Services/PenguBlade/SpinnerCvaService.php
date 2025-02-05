@@ -31,7 +31,7 @@ class SpinnerCvaService
                         'danger' => 'fill-white dark:fill-white',
                         'warning' => 'fill-white dark:fill-white',
                         'success' => 'fill-white dark:fill-white',
-                    ]
+                    ],
                 ],
                 'defaultVariants' => [],
             ],

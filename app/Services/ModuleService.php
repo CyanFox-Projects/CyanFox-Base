@@ -5,9 +5,9 @@ namespace App\Services;
 use App\Facades\VersionManager;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 use Nwidart\Modules\Facades\Module;
-use Illuminate\Support\Facades\File;
 use ZipArchive;
 
 class ModuleService
@@ -47,7 +47,7 @@ class ModuleService
                 return false;
             }
 
-            if ($module->isEnabled() && !$this->checkRequirements($module->getName())) {
+            if ($module->isEnabled() && ! $this->checkRequirements($module->getName())) {
                 return false;
             }
         }
@@ -101,7 +101,6 @@ class ModuleService
         return $module->get('description');
     }
 
-
     public function getSettingsPage(string $module): ?string
     {
         $module = Module::find($module);
@@ -118,18 +117,18 @@ class ModuleService
         $module = Module::find($module);
 
         if ($module->get('remote_version_url') !== null) {
-            if (Cache::has($module->getName() . '_version')) {
-                return Cache::get($module->getName() . '_version');
+            if (Cache::has($module->getName().'_version')) {
+                return Cache::get($module->getName().'_version');
             }
 
             $response = Http::get($module->get('remote_version_url'));
             $response = json_decode($response->body(), true);
 
-            if (!isset($response['version'])) {
+            if (! isset($response['version'])) {
                 return null;
             }
 
-            Cache::put($module->getName() . '_version', $response['version'], now()->addMinutes(60));
+            Cache::put($module->getName().'_version', $response['version'], now()->addMinutes(60));
 
             return $response['version'];
         }
@@ -162,7 +161,7 @@ class ModuleService
         $destinationPath = base_path('modules');
         $tempPath = storage_path('app/temp');
 
-        $tempFile = $tempPath . '/' . basename($url);
+        $tempFile = $tempPath.'/'.basename($url);
 
         File::ensureDirectoryExists($tempPath);
 

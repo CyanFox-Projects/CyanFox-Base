@@ -4,7 +4,6 @@ namespace App\Livewire\Components\Modals;
 
 use App\Livewire\CFModalComponent;
 use Livewire\Attributes\Locked;
-use Livewire\Attributes\On;
 use Modules\Auth\Traits\WithPasswordConfirmation;
 
 class Confirmation extends CFModalComponent
@@ -13,28 +12,37 @@ class Confirmation extends CFModalComponent
 
     #[Locked]
     public $title;
+
     #[Locked]
     public $description;
+
     #[Locked]
     public $cancel;
+
     #[Locked]
     public $cancelColor;
+
     #[Locked]
     public $confirm;
+
     #[Locked]
     public $confirmColor;
+
     #[Locked]
     public $icon;
+
     #[Locked]
     public $iconColor;
+
     #[Locked]
     public $needsPasswordConfirmation;
+
     #[Locked]
     public $event;
 
     public function confirmAction()
     {
-        if ($this->needsPasswordConfirmation && !$this->hasPasswordConfirmedSession()) {
+        if ($this->needsPasswordConfirmation && ! $this->hasPasswordConfirmedSession()) {
             return;
         }
 
@@ -45,7 +53,7 @@ class Confirmation extends CFModalComponent
 
     public function mount()
     {
-        if ($this->needsPasswordConfirmation && !$this->checkPasswordConfirmation()->passwordMethod('render')->checkPassword()) {
+        if ($this->needsPasswordConfirmation && ! $this->checkPasswordConfirmation()->passwordMethod('render')->checkPassword()) {
             return;
         }
     }

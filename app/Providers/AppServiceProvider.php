@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
             'app.locale' => settings('internal.app.lang', config('app.locale')),
         ];
 
-        if (!config('settings.disable_db_settings') && config('app.env') !== 'testing') {
+        if (! config('settings.disable_db_settings') && config('app.env') !== 'testing') {
             foreach ($configValues as $key => $value) {
                 Config::set($key, $value);
             }

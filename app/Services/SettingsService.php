@@ -9,7 +9,6 @@ use Illuminate\Support\Str;
 
 class SettingsService
 {
-
     public function getSetting(string $key, $default = null, $isLocked = false, bool $isEncrypted = false): ?string
     {
         try {
@@ -58,7 +57,7 @@ class SettingsService
             $setting->key = $key;
             if ($value != null) {
                 $value = ($isEncrypted) ? encrypt($value) : $value;
-            } else if (config($key) != null) {
+            } elseif (config($key) != null) {
                 $value = ($isEncrypted) ? encrypt(config($key)) : config($key);
             }
 
@@ -67,7 +66,7 @@ class SettingsService
             $setting->save();
         } elseif ($updateIfExists) {
             if ($setting->is_locked) {
-                Log::debug('Attempted to update locked setting: ' . $setting->key);
+                Log::debug('Attempted to update locked setting: '.$setting->key);
 
                 return $setting;
             }
@@ -89,7 +88,7 @@ class SettingsService
 
         if ($setting != null) {
             if ($setting->is_locked) {
-                Log::debug('Attempted to update locked setting: ' . $setting->key);
+                Log::debug('Attempted to update locked setting: '.$setting->key);
 
                 return $setting;
             }
